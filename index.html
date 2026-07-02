@@ -1,27 +1,48 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!-- Define o tipo de documento como HTML5 -->
+<!DOCTYPE html> 
+<!-- Define o idioma principal da página como Português do Brasil -->
+<html lang="pt-BR"> 
 <head>
+    <!-- Define a codificação de caracteres como UTF-8 (suporta acentos) -->
     <meta charset="UTF-8">
+    <!-- Garante o aviso de responsividade para telas de celulares e tablets -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Vincula o arquivo de estilização CSS externo -->
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Configurações para carregar as fontes do Google Fonts mais rápido -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Importa a fonte específica 'Bai Jamjuree' com várias espessuras -->
     <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <title>Em busca da cidade perdida</title>
+    
+    <!-- Título da página que aparece na aba do navegador -->
+    <title>Em busca da cidade perdida</title> 
 </head>
 <body>
+    <!-- Define o conteúdo principal da página -->
     <main>
+        <!-- Bloco do Passo Inicial (Ativo por padrão) -->
+        <!-- A classe 'ativo' faz este bloco ficar visível na tela -->
         <div class="passo ativo" id="passo-0">
             <p>Um dia desses, dentro de um livro da biblioteca da escola, eu descobri uma carta antiga sobre uma cidade perdida, escondida por riquezas e belezas naturais. Nessa carta, a autora deixa algumas pistas para encontrar essa cidade e eu decidi segui-las!</p>
+            <!-- Botão que direciona para o passo de ID ou índice 1 (Rio de Janeiro) -->
             <button class="btn-proximo" data-proximo="1">Rio de Janeiro</button>
+            <!-- Botão que direciona para o passo de ID ou índice 2 (Pernambuco) -->
             <button class="btn-proximo" data-proximo="2">Pernambuco</button>
         </div>
+
+        <!-- Bloco do Passo 1 (Escondido inicialmente por não ter a classe 'ativo') -->
         <div class="passo" id="passo-1">
             <p>Você começa sua jornada no Rio de Janeiro, subindo o Pico da Tijuca ao amanhecer para encontrar a primeira pista.</p>
+            <!-- Botão que direciona para o passo de ID ou índice 3 -->
             <button class="btn-proximo" data-proximo="3">Procurar a pista no topo do pico</button>
+            <!-- Botão que direciona para o passo de ID ou índice 4 -->
             <button class="btn-proximo" data-proximo="4">Desistir e voltar para casa</button>
         </div>
     </main>
+    
+    <!-- Vincula o arquivo JavaScript que controla a lógica e a troca de telas -->
     <script src="script.js"></script>
 </body>
 </html>
